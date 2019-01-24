@@ -8,5 +8,12 @@ module.exports = {
     "rules": {
         "no-underscore-dangle": 0,
         "import/prefer-default-export": 0
-    }
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["./src"]
+          }
+        },
+      },
 };

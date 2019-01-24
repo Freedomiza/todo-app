@@ -1,3 +1,5 @@
+import firebase from 'firebase';
+
 import storage from './storage';
 import STORAGE_KEY from '../consts/storage-key';
 
@@ -7,7 +9,15 @@ const getAuthHeader = async () => {
     Authorization: `Bearer ${token}`,
   };
 };
+const isAuthenticated = () => {
+  console.log(firebase.auth().currentUser);
+  return firebase.auth().currentUser;
+};
+
+const logout = () => firebase.auth().signOut();
 
 export default {
   getAuthHeader,
+  isAuthenticated,
+  logout,
 };
