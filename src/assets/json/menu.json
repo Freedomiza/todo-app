@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "My todos",
+    "url": "/app/my"
+
+  },
+  {
+    "id": 2,
+    "title": "About",
+    "url": "/app/about"
+  }
+]

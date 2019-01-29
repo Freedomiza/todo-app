@@ -1,4 +1,4 @@
-import { getDataSuccess, getDataError } from './HomeAction';
+import { getDataSuccess, getDataError } from './AppContentAction';
 import listProvider from '../../provider/list';
 
 export const getDataThunk = () => async (dispatch, getState) => {

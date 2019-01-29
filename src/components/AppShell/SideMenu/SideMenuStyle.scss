@@ -1,0 +1,25 @@
+.App-sidemenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* padding: 15px 0px; */
+  border-right: 1px solid;
+  min-height: 100%;
+  &__inner {
+
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: ease all 0.3s;
+    &--active {
+      background-color: #000;
+      color: #FFF;
+    }
+  }
+}

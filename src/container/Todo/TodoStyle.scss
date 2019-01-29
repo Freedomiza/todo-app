@@ -1,0 +1,12 @@
+.App-todo {
+  &__input-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__input {
+    height: 2em;
+    min-width: 40vw;
+    border: 1px solid #282c33;
+    border-radius: 4px;
+  }
+}

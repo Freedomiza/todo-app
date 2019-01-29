@@ -10,7 +10,7 @@ const getAuthHeader = async () => {
   };
 };
 const isAuthenticated = () => {
-  console.log(firebase.auth().currentUser);
+  // console.log(firebase.auth().currentUser);
   return firebase.auth().currentUser;
 };
 

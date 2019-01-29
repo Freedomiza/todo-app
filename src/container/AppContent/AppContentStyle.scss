@@ -1,0 +1,13 @@
+.App-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 5vh auto;
+  &__inner {
+    display: grid;
+    grid-template-columns: 20% auto;
+
+    &--has-right {
+    grid-template-columns: 20% auto 20%;
+    }
+  }
+}

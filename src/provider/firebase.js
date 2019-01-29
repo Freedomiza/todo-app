@@ -12,9 +12,14 @@ const fbConfig = {
   storageBucket: '',
   messagingSenderId: process.env.REACT_APP_FB_SENDER_ID,
 };
-const createFirebase = () => {
-  const fbApp = firebase.initializeApp(fbConfig);
+
+let fbApp;
+
+const createFirebaseInstance = () => {
+  if (!fbApp) {
+    fbApp = firebase.initializeApp(fbConfig);
+  }
   return fbApp;
 };
 
-export default createFirebase;
+export default createFirebaseInstance;

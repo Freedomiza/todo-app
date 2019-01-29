@@ -1,4 +1,4 @@
-import { HOME_ACTION_TYPE } from './HomeAction';
+import { HOME_ACTION_TYPE } from './AppContentAction';
 
 const initialState = {
   isFetching: false,
